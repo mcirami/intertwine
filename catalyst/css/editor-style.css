@@ -1,0 +1,77 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.65;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+/* Lead Paragraphs */
+p.lead {
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  margin: 0 0 22px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.25;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: #555;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/* Paragraph spacing */
+p {
+  margin: 0 0 22px;
+}
+
+/* Blockquotes */
+blockquote {
+  font-family: georgia;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  color: #444;
+  padding: 20px;
+  background: #f9f9f9;
+  margin: 0 0 22px;
+}
+blockquote cite {
+  color: #888;
+}
+blockquote p {
+  margin: 0 0 22px;
+}
+blockquote > p:last-child {
+  margin-bottom: 0;
+}

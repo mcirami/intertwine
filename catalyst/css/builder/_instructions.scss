@@ -1,0 +1,84 @@
+.builder-instructions {
+   margin: 0 0 $global_margin_after;
+
+   &.inverse {
+      .builder-step-title {
+         color: #fff;
+      }
+      .builder-step-content {
+         color: #fff;
+      }
+   }
+
+   .builder-instructions-step {
+      position: relative;
+      overflow: hidden;
+      &:not(:last-child) {
+         padding-bottom: 20px;
+         margin-bottom: 10px;
+      }
+
+      &:not(:last-child):before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 2px;
+         height: 100%;
+         top: 70px;
+         left: 29px;
+      }
+      &[data-entrance]:not(:last-child):before {
+         transition: opacity 1s ease 0.5s;
+         opacity: 0;
+      }
+      &.animate-step[data-entrance]:not(:last-child):before {
+         opacity: 1;
+      }
+
+      .builder-step-symbol {
+         position: absolute;
+         top: 0;
+         left: 0;
+         cursor: default;
+         height: 60px;
+         width: 60px;
+         border-radius: 60px;
+         text-align: center;
+         line-height: 60px;
+         transition: transform 1s ease, opacity 1s ease, color 0.25s ease;
+         transform: none;
+         color: #fff;
+         text-shadow: rgba(0,0,0,0.25) 0px 1px 2px;
+         font-size: 22px;
+         .builder-step-number {
+            font-weight: 300;
+         }
+      }
+      &[data-entrance] .builder-step-symbol {
+         transform: scale(0.2);
+         opacity: 0;
+      }
+      &[data-entrance].animate-step .builder-step-symbol {
+         transform: none;
+         opacity: 1;
+      }
+      .builder-step-description {
+         padding: 0 0 0 75px;
+         .builder-step-title {
+            margin: 7px 0 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+         }
+         .builder-step-content p {
+            margin: 0;
+         }
+      }
+   }
+
+   .builder-instructions-step[data-entrance] {
+      opacity: 1 !important;
+   }
+
+}

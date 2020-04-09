@@ -1,0 +1,88 @@
+.builder-toggle-group {
+   margin: 0 0 $global_margin_after;
+   .builder-toggle-group-filter-list {
+      margin: 0 0 $global_margin_after*1.5;
+      ul {
+         margin: 0;
+         padding: 0;
+         @include has-clearfix;
+         li {
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            list-style: none;
+            float: left;
+            &:not(:last-child):after {
+               content: "/";
+               margin: 0 15px;
+            }
+            a {
+               text-decoration: none;
+               position: relative;
+               transition: color 0.25s ease, border 0.25s ease;
+               padding: 6px 0;
+               color: #222;
+               &:after {
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  height: 0;
+                  width: 100%;
+                  border-bottom: 2px solid;
+                  transition: transform 0.15s ease, opacity 0s linear 0.15s;
+                  opacity: 0;
+                  transform: scale(0,1);
+               }
+            }
+            &.is-active > a:after {
+               transition: transform 0.25s ease;
+               opacity: 1;
+               transform: none;
+            }
+         }
+      }
+   }
+   .builder-toggle {
+      margin: 0 0 $global_margin_after*1.5;
+      box-shadow: none;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+      transform: none;
+      opacity: 1;
+      &.is-disabled {
+         transform: scale(0.95);
+         opacity: 0.5;
+      }
+   }
+   .builder-toggle-title {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0 0 15px;
+      transition: border 0.25s ease;
+      border-bottom: 1px solid #ddd;
+      &:before {
+         float: right;
+         transform: none;
+         transition: transform 0.25s ease;
+         perspective: 800px;
+         perspective-origin: 50% 100px;
+         content: '\f431';
+         font-family: 'Genericons';
+         vertical-align: top;
+         display: inline-block;
+      }
+   }
+   .builder-toggle.is-open .builder-toggle-title:before {
+      transform: rotateX(180deg);
+   }
+   .builder-toggle-content > div {
+      padding: 15px 0 0;
+      p:last-child {
+         margin-bottom: 0;
+      }
+   }
+}

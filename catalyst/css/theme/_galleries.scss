@@ -1,0 +1,72 @@
+/* Gallery CSS borrowed from TwentyFifteen theme */
+
+.gallery {
+   margin: 0 0 $global_margin_after;
+   @include has-clearfix;
+}
+.gallery-item {
+   float: left;
+   padding: 1.79104477%;
+   margin: 0;
+   text-align: center;
+   width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+   max-width: 50%;
+   &:nth-child(2n+3) {
+      clear: both;
+   }
+}
+.gallery-columns-3 .gallery-item {
+   max-width: 33.33%;
+   &:nth-child(3n+4) {
+      clear: both;
+   }
+}
+.gallery-columns-4 .gallery-item {
+   max-width: 25%;
+   &:nth-child(4n+5) {
+      clear: both;
+   }
+}
+.gallery-columns-5 .gallery-item {
+   max-width: 20%;
+   &:nth-child(5n+6) {
+      clear: both;
+   }
+}
+.gallery-columns-6 .gallery-item {
+   max-width: 16.66%;
+   &:nth-child(6n+7) {
+      clear: both;
+   }
+}
+.gallery-columns-7 .gallery-item {
+   max-width: 14.28%;
+   &:nth-child(7n+8) {
+      clear: both;
+   }
+}
+.gallery-columns-8 .gallery-item {
+   max-width: 12.5%;
+   &:nth-child(8n+9) {
+      clear: both;
+   }
+}
+.gallery-columns-9 .gallery-item {
+   max-width: 11.11%;
+   &:nth-child(9n+10) {
+      clear: both;
+   }
+}
+.gallery-icon img {
+   margin: 0 auto;
+}
+.gallery-columns-6,
+.gallery-columns-7,
+.gallery-columns-8,
+.gallery-columns-9 {
+   .gallery-caption {
+      display: none;
+   }
+}

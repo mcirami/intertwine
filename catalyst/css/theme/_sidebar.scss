@@ -1,0 +1,118 @@
+@media #{$min_2} {
+   #sidebar {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+}
+
+#sidebar .widget {
+   position: relative;
+   padding: 40px 30px 30px;
+   margin: 0 0 25px;
+   background: #fff;
+   border-radius: 0 0 5px 5px;
+   box-shadow: rgba(0,0,0,0.1) 0px 1px 2px;
+   color: #555;
+   .widget-title {
+      color: #000;
+   }
+   &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+   }
+   li {
+      padding: 6px 0;
+   }
+   a {
+      color: #444;
+      &:hover {
+         color: #222;
+      }
+   }
+   table, th, td {
+      border-color: #eee;
+   }
+}
+@media #{$min_2} {
+   #sidebar .widget:last-child {
+      margin: 0;
+   }
+}
+
+/* Calendar widget */
+#sidebar .widget_calendar {
+   overflow: hidden;
+   padding: 40px 0 0;
+   .widget-title {
+      display: none;
+   }
+   #calendar_wrap {
+      margin: 0 -1px -1px;
+   }
+   caption {
+      padding: 0 20px 10px;
+      color: #222;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+   }
+   table {
+      margin-bottom: 0;
+      th, td { text-align: center; }
+   }
+}
+
+/* Search widget */
+#sidebar .widget_search {
+   padding: 0;
+   .widget-title {
+      display: none;
+   }
+   .search-form {
+      @include has-clearfix;
+      label {
+         width: 65%;
+         margin: 0 !important;
+      }
+      label, .search-submit {
+         float: left;
+         overflow: hidden;
+      }
+      .search-field,
+      .search-submit {
+         border-radius: 0;
+         border-bottom: 0;
+         border-top: 0;
+         padding: 20px;
+      }
+      .search-field {
+         border-left: 0;
+         box-shadow: none;
+      }
+      .search-submit {
+         width: 35%;
+         border-right: 0;
+         border-left: 0;
+      }
+   }
+}
+
+/* Featured text */
+#sidebar .widget_catalyst_featured_text:before {
+   display: none !important;
+}
+
+/* Tag Cloud */
+#sidebar .widget_tag_cloud .tagcloud a {
+   background: #f9f9f9;
+   color: #444 !important;
+   &:hover {
+      background: #f4f4f4;
+      color: #222 !important;
+   }
+}

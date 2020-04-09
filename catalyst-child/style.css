@@ -1,0 +1,513 @@
+/*
+Theme Name: Catalyst Child
+Version: 0.0.1
+Theme URI: http://wordpress.org/themes/catalyst/
+Author: Matteo Cirami
+Author URI: http://mscwebservices.net/
+Description: Catalyst Child Theme
+Template: catalyst
+
+*/
+
+
+.acf-field-checkbox .acf-label {
+    display: none;
+}
+
+.acf-fields > .acf-field {
+    border-top: none !important;
+}
+
+#sidebar {
+    display:none;
+    width: 0;
+}
+
+body.sidebar-right #primary {
+    width: 100% !important;
+    max-width: none;
+}
+
+#main {
+    width: 100%;
+    float: left;
+}
+
+#archive-filters {
+    width: 22%;
+    float: left;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 1px 0px 10px 2px rgba(211,211,211,1);
+    -moz-box-shadow: 1px 0px 10px 2px rgba(211,211,211,1);
+    box-shadow: 1px 0px 10px 2px rgba(211,211,211,1);
+}
+
+.content_wrap {
+    width: 78%;
+    float: left;
+    padding-left: 20px;
+}
+
+#archive-filters ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+
+}
+
+#archive-filters ul .box  {
+    width: 100%;
+    height: 198px;
+    overflow-y: scroll;
+    border: 1px inset;
+    border-color: rgba(155,155,155,.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px 0 15px 15px;
+}
+
+#archive-filters ul.gender .box {
+    height: 85px;
+}
+
+#archive-filters ul.body_type .box {
+    height: 100px;
+}
+
+#archive-filters ul.residence .box{
+    height: 125px;
+}
+
+#archive-filters ul li {
+    width: 100%;
+    float: left;
+}
+
+body.sidebar-right #primary {
+    width: 100%;
+}
+
+#primary, #sidebar {
+    max-width: 100%;
+}
+
+.model_results_wrapper {
+    display: block;
+    width: 100%;
+}
+
+.model_wrap {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.model_wrap:last-child {
+    margin-bottom: 0;
+}
+
+.model_content {
+    width: 23.5%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 1px 0px 10px 2px rgba(211,211,211,1);
+    -moz-box-shadow: 1px 0px 10px 2px rgba(211,211,211,1);
+    box-shadow: 1px 0px 10px 2px rgba(211,211,211,1);
+}
+
+.model_content:nth-child(4n) {
+    margin-right: 0;
+}
+
+.model_content a {
+    display: block;
+}
+
+.model_content img {
+    width: 100%;
+    float: left;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+}
+
+.model_content h3 {
+    width: 100%;
+    float: left;
+    padding: 4px 5px;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    color: #fff;
+    background: #FF2A68;
+    background: -webkit-linear-gradient(#FF2A68, #FF5E3A);
+    background: linear-gradient(#FF2A68, #FF5E3A);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+}
+
+.model_content .image_wrap {
+    width: 100%;
+    float: left;
+}
+
+.single_model_wrap {
+    width: 100%;
+    float: left;
+}
+
+.single_model_wrap .title {
+    border-bottom: 1px solid;
+    border-color: rgba(0,0,0,.2);
+    margin-bottom: 20px;
+}
+
+.single_model_wrap .title h3 {
+    margin: 0;
+}
+
+.single_model_wrap .model_info {
+    width: 49%;
+    float: left;
+    padding: 0 20px;
+    margin-right: 2%;
+}
+
+.single_model_wrap .model_info ul {
+    width: 100%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.single_model_wrap .model_info ul li {
+    width: 50%;
+    float: left;
+}
+
+.model_wrap label {
+    font-weight: 700;
+}
+
+.model_wrap .images {
+    width: 100%;
+    float: left;
+}
+
+.model_wrap .images .column {
+    width: 49%;
+    float: left;
+}
+
+.model_wrap .images .column:first-child {
+    margin-right: 2%;
+}
+
+.single_model_wrap .desc {
+    width: 49%;
+    float: left;
+}
+
+.single_model_wrap .desc .full_width {
+    width: 100%;
+    float: left;
+}
+
+.below-post, .post-navigation, .nav-links  {
+    width: 100%;
+    float: left;
+}
+
+.below-post .nav-previous {
+    float: left;
+}
+
+.below-post .nav-next {
+    float: right;
+}
+
+
+.signup_wrap {
+    width: 100%;
+    float: left;
+}
+
+.signup_wrap .info_column {
+    width: 40%;
+    float: left;
+    padding-top: 20px;
+}
+
+.signup_wrap form {
+    width: 60%;
+    float: left;
+}
+
+.signup_wrap .info_column .row {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.signup_wrap .info_column .icon_wrap {
+    width: 60px;
+    float: left;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcc00+0,cc9900+100 */
+    background: #ffcc00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffcc00 0%, #cc9900 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffcc00 0%,#cc9900 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffcc00 0%,#cc9900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#cc9900',GradientType=0 ); /* IE6-9 */
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding: 14px 16px 18px;
+    text-align: center;
+}
+
+.signup_wrap .info_column .booked .icon_wrap {
+    padding: 15px 16px 19px;
+}
+
+.signup_wrap .info_column .icon_wrap img {
+    vertical-align: middle;
+}
+
+.signup_wrap .info_column .text_wrap {
+    float: left;
+    width: 78%;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.signup_wrap .info_column .row:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 44%;
+    top: 64px;
+    left: 29px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcc00+0,cc9900+100 */
+    background: #ffcc00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffcc00 0%, #cc9900 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffcc00 0%,#cc9900 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffcc00 0%,#cc9900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#cc9900',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.signup_wrap .info_column .row.booked:before {
+    height: 52%;
+    top:65px
+}
+
+.signup_wrap .info_column .row:last-child:before {
+    display: none;
+}
+
+.signup_wrap .info_column .text_wrap h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.signup_wrap .acf-field {
+    width: 50%;
+    float: left;
+    clear: none !important;
+}
+
+.signup_wrap .acf-field select, .signup_wrap .acf-field input {
+    height: 35px;
+}
+
+.signup_wrap .acf-field.acf-field-textarea, .signup_wrap .acf-field.acf-field-checkbox {
+    width: 100%;
+}
+
+.signup_wrap .acf-field.acf-field-checkbox {
+    padding: 5px 12px;
+}
+
+.signup_wrap .acf-field.acf-field-image {
+    margin-bottom: 20px;
+}
+
+.signup_wrap .acf-form-submit {
+    margin-top: 20px;
+}
+
+.results_back {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.no-results.not-found {
+    width:78%;
+    float: left;
+    padding: 0 20px;
+}
+
+.no_perm {
+    text-align: center;
+    padding: 25% 0;
+}
+
+body #banner-title {
+    padding: 40px 0 !important;
+}
+
+.post-delete-link {
+    padding: 10px 20px;
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcc00+0,cc9900+100 */
+    background: #ffcc00; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffcc00 0%, #cc9900 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffcc00 0%,#cc9900 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffcc00 0%,#cc9900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#cc9900',GradientType=0 ); /* IE6-9 */
+
+}
+
+.post-delete-link:hover {
+    background: #ffcc00;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .signup_wrap .info_column .row.add:before {
+        height: 52%;
+    }
+
+    .signup_wrap .info_column .row.booked:before {
+        height: 56%;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .signup_wrap .info_column .text_wrap h3 {
+        font-size: 16px;
+    }
+
+    .signup_wrap .info_column .text_wrap p {
+        font-size: 13px;
+    }
+
+    .model_content {
+        width: 32%;
+    }
+
+    .model_content:nth-child(4n) {
+        margin-right: 2%;
+    }
+
+    .model_content:nth-child(3n) {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .signup_wrap .info_column {
+        width: 100%;
+    }
+
+    .signup_wrap form {
+        width: 100%;
+    }
+
+    .signup_wrap .acf-field {
+        width: 100%;
+        float: left;
+        clear: none !important;
+    }
+
+    #archive-filters {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content_wrap {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+
+    #archive-filters ul {
+        width: 32%;
+        margin-right: 1.3%;
+    }
+
+    #archive-filters ul .box,#archive-filters ul.gender .box,#archive-filters ul.body_type .box,#archive-filters ul.residence .box  {
+        height: 85px;
+    }
+
+    .single_model_wrap .model_info {
+        width: 100%;
+        padding: 0;
+    }
+
+    .single_model_wrap .model_info li {
+        width: 50%;
+        float: left;
+    }
+
+    .single_model_wrap .desc {
+        width: 100%;
+    }
+
+    .signup_wrap .info_column .row.add:before {
+        height: 49%;
+    }
+
+    .signup_wrap .info_column .row.booked:before {
+        height: 50%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    #archive-filters ul {
+        width: 47%;
+        margin-right: 1.3%;
+    }
+
+    .model_content {
+        width: 48%;
+    }
+
+
+    .model_content:nth-child(3n) {
+        margin-right: 2%;
+    }
+
+    .model_content:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+

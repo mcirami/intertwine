@@ -1,0 +1,31 @@
+/* Reset Box Sizing */
+html {
+   box-sizing: border-box;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+/* Correct cursor for anchors/buttons */
+a, button[type="button"] {
+   cursor: pointer;
+}
+
+/* Basic image handling */
+img, figure {
+   max-width: 100%;
+}
+img[height] {
+   height: auto;
+}
+img[width] {
+   width: auto;
+}
+
+/* Custom text selection color */
+::selection {
+   color: #fff;
+}
+::-moz-selection {
+   color: #fff;
+}

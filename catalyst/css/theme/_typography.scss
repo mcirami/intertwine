@@ -1,0 +1,256 @@
+body {
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.7;
+   font-size: 15px;
+   color: #222;
+   font-weight: 400;
+}
+
+/* Apply clearfix to headers */
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Lato', sans-serif;
+   clear: both;
+   margin: 0 0 $global_margin_after;
+   color: #000;
+   font-weight: 300;
+   line-height: 1.25;
+   small {
+      color: #555;
+   }
+}
+
+/* Headers */
+h1 {
+   font-size: 36px;
+}
+h2 {
+   font-size: 30px;
+}
+h3 {
+   font-size: 24px;
+}
+h4 {
+   font-size: 20px;
+}
+h5 {
+   font-size: 18px;
+}
+h6 {
+   font-size: 16px;
+}
+
+/* Page Headers */
+.page-header {
+   margin-bottom: $global_margin_after*2;
+   &.with-divider {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: $global_margin_after*2;
+   }
+}
+.page-title {
+   @include page-title;
+}
+.page-description {
+   @include page-description;
+}
+.page-tagline {
+   @include page-tagline;
+}
+
+/* Lead Paragraphs */
+p.lead {
+   font-size: 18px;
+   border-bottom: 1px solid #ddd;
+   padding-bottom: $global_margin_after;
+   margin-bottom: $global_margin_after;
+}
+
+/* Lists */
+ul, ol {
+   margin: 0 0 $global_margin_after 15px;
+}
+li > ul, li > ol {
+   margin-bottom: 0;
+}
+
+/* Paragraph spacing */
+p {
+   margin: 0 0 $global_margin_after;
+}
+
+/* Blockquotes */
+blockquote {
+   font-family: georgia;
+   font-size: 24px;
+   font-weight: normal;
+   font-style: italic;
+   color: #000;
+   position: relative;
+   padding: 30px;
+   background: #fff;
+   margin: 0 0 $global_margin_after;
+   box-shadow: rgba(0,0,0,0.1) 0px 1px 2px;
+   cite {
+      color: #777;
+   }
+   p {
+      margin: 0 0 $global_margin_after;
+   }
+   & > p:last-child {
+      margin-bottom: 0;
+   }
+}
+
+/* Horizontal rulers */
+hr {
+   margin: 0 0 $global_margin_after;
+   border: none;
+   background: #d6d6d6;
+   height: 1px;
+}
+
+/* Basic link styling */
+a {
+   text-decoration: none;
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+/* Bolded tags */
+b, strong {
+   font-weight: bold;
+}
+
+/* Italicised tags */
+address, dfn, cite, em, i {
+   font-style: italic;
+}
+
+/* Addresses */
+address {
+   margin: 0 0 $global_margin_after;
+}
+
+/* Apply light yellow background to marked text */
+mark, ins {
+   background-color: #fff9c0;
+   text-decoration: none;
+}
+
+/* Add visual support for superscript & subscript */
+sup, sub {
+   font-size: 75%;
+   height: 0;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+}
+sup {
+   bottom: 1ex;
+}
+sub {
+   top: .5ex;
+}
+
+/* Deprecated tags */
+small {
+   font-size: 75%;
+}
+big {
+   font-size: 125%;
+}
+
+/* Figures */
+figure {
+   margin: 0 0 $global_margin_after;
+}
+figcaption {
+   font-style: italic;
+   font-size: 14px;
+}
+
+/* Tables */
+table, th, td {
+   border: 1px solid #ddd;
+}
+table {
+   border-collapse: separate;
+   border-spacing: 0;
+   border-width: 1px 0 0 1px;
+   margin: 0 0 1.6em;
+   table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+   width: 100%;
+}
+caption, th, td {
+   font-weight: normal;
+   text-align: left;
+}
+caption {
+   font-style: italic;
+}
+th {
+   border-width: 0 1px 1px 0;
+   font-weight: 700;
+}
+td {
+   border-width: 0 1px 1px 0;
+}
+th, td {
+   padding: 0.4em;
+}
+
+/* Form fields */
+label {
+   cursor: pointer;
+   font-weight: 400;
+   margin-bottom: 10px;
+}
+button, input, select, textarea {
+   background-color: #fff;
+   font-size: 16px;
+   line-height: 1;
+   margin: 0;
+   padding: 10px;
+   max-width: 100%;
+   vertical-align: baseline;
+   border: 1px solid #d2d2d2;
+   &:focus {
+      outline: none;
+   }
+   &[disabled] {
+      opacity: 0.5;
+      cursor: default;
+   }
+}
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+   box-shadow: inset rgba(0,0,0,0.05) 1px 1px 1px;
+}
+textarea {
+   line-height: 1.65;
+}
+button, input {
+   line-height: normal;
+}
+input, textarea {
+   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Removing the inner shadow on iOS inputs */
+   color: #555;
+}
+input:focus, textarea:focus {
+   border: 1px solid #bbb;
+   color: #333;
+}
+input[type="search"] {
+   box-sizing: inherit;
+}

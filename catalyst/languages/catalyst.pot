@@ -1,0 +1,545 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: catalyst/includes/page-settings.php:1
+msgid "%s Page Settings"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:114
+msgid "(default layout)"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:124
+msgid "(disabled)"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:145
+msgid "(no menu)"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/page-settings.php:143
+msgid "<a href=\"%s\">Custom menu</a> to be displayed within the banner area."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "About"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Accent One"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Accent Two"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Add widgets here to appear in the sidebar of shop related pages. If this widget area is left empty then the default sidebar will be used instead."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Add widgets here to appear in the sidebar of single WooCommerce product pages. If this widget area is left empty then the shop sidebar will be used instead."
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/themefyre-portfolio.php:24
+msgid "All"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Any size image will work here, although the height will be forced to <strong>50px</strong> causing the width to scale proportionally. <strong>Please note that in order for your logo to be retina quality it will need to have a height of at least 100px.</strong>"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "As seen in the Catalyst theme demo"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/featured-widget.php:97
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:153
+msgid "Banner Background Image"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:141
+#: catalyst/includes/page-settings.php:142
+msgid "Banner Menu"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:136
+#: catalyst/includes/page-settings.php:137
+msgid "Banner Tagline"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:131
+#: catalyst/includes/page-settings.php:132
+msgid "Banner Title"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Boxed Mode"
+msgstr ""
+
+#. Text in echo
+#: catalyst/header.php:136
+msgid "Cancel search"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/featured-widget.php:1
+msgid "Catalyst Featured Text"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Centered (no sidebar)"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Check this box to hide the Themefyre attribution text in the socket area."
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/template-tags.php:26
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in echo
+#: catalyst/comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Contact"
+msgstr ""
+
+#. Text in function
+#: catalyst/content.php:29
+msgid "Continue reading %s"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Copyright Text"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Custom copyright text, leave this blank to use the default text: %s."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Custom text to placed in the top bar above the header on every page. Please note that this text is hidden on smaller screens such as mobile devices."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Display a cart icon in the header indicating the number of items currently in the cart. <strong>The icon will not be displayed when the cart is empty.</strong>"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Display a search bar in the header."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/page-settings.php:1
+msgid "Enabled"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/page-settings.php:1
+msgid "Enabled with bottom border"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/page-settings.php:1
+msgid "Enabled with glassy background"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/page-settings.php:1
+msgid "Enabled with shadow background"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "F.A.Q"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:121
+#: catalyst/includes/page-settings.php:122
+msgid "Floating Header"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Floating Header Logo Image"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Footer"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Footer Widgetized Columns"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Full width (no sidebar)"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Header"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Header Cart Icon"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Hide Themefyre Attribution"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Highlight Active Menu Items"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Highlight active menu items in the header."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/featured-widget.php:1
+msgid "Highlight the text using the theme accent colors."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Home Version 1"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Home Version 2"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Home Version 3"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Home Version 4"
+msgstr ""
+
+#. Text in echo
+#: catalyst/404.php:11
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. Text in echo
+#: catalyst/content-none.php:16
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Layout"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Left sidebar"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Logo Image"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Maximum number of columns the widgetized area in the footer should be divided into."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Maximum number of products displayed on shop archive pages."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:1
+msgid "Newer Comments"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Next Page"
+msgstr ""
+
+#. Text in echo
+#: catalyst/search.php:20
+msgid "Nothing Found"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:1
+msgid "Older Comments"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Only applicable when a custom logo image is not in use. Will be applied to the default textual site title only."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Page"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:111
+#: catalyst/includes/page-settings.php:112
+#: catalyst/includes/customizer.php:1
+msgid "Page Layout"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Pages:"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Previous Page"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Pricing"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Product Layout"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Product Sidebar"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Products Per Page"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:163
+msgid "Remove background image"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Right sidebar"
+msgstr ""
+
+#. Text in echo
+#: catalyst/header.php:137
+msgid "Search"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Search Results Layout"
+msgstr ""
+
+#. Text in function
+#: catalyst/search.php:15
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Text in echo
+#: catalyst/header.php:134
+msgid "Search for:"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Search in Header"
+msgstr ""
+
+#. Text in echo
+#: catalyst/header.php:135
+msgid "Search..."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Services"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/page-settings.php:1
+msgid "Set Banner Background Image"
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/page-settings.php:156
+msgid "Set background image"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Shop Landing Page"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Shop Layout"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "Shop Sidebar"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Should be the same size as the standard logo image, will be used on any page where the floating header has been enabled."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Showing all %d results"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/template-tags.php:79
+msgid "Showing the single result"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Site Title"
+msgstr ""
+
+#. Text in echo
+#: catalyst/content-none.php:13
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Sticky Header"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Stretched Header"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/themefyre-builder.php:1
+msgid "Testimonials"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "The default page layout for WooCommerce related pages. This can be overriden on a per page basis using the Catalyst Page Settings meta box."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/woocommerce.php:1
+msgid "The default page layout for all WooCommerce products. This can be overriden on a per product basis using the Catalyst Page Settings meta box."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "The default page layout for all content. This can be overriden on a per page basis using the Catalyst Page Settings meta box."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "The header content will stretch horizontally to fill all available space. Only applicable when \"Boxed Mode\" has not been enabled."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "The header will stick to the top of the screen as the page is scrolled."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "The layout will be constrained within a box, revealing the background on either side."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "The page layout for search results pages."
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/page-settings.php:1
+msgid "There was an error retrieving the selected image, please try again later."
+msgstr ""
+
+#. Text in echo
+#: catalyst/includes/featured-widget.php:94
+msgid "Title:"
+msgstr ""
+
+#. Text in echo
+#: catalyst/header.php:102
+msgid "Toggle Navigation"
+msgstr ""
+
+#. Text in echo
+#: catalyst/header.php:96
+msgid "Toggle Search Bar"
+msgstr ""
+
+#. Text in function
+#: catalyst/includes/customizer.php:1
+msgid "Top bar Text"
+msgstr ""
+
+#. Text in echo
+#: catalyst/header.php:110
+msgid "View Cart"
+msgstr ""

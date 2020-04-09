@@ -1,0 +1,189 @@
+#footer {
+   background: #252525;
+   color: #ddd;
+   a {
+      color: #eee;
+      &:hover {
+         color: #fff;
+      }
+   }
+   h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+      small {
+         color: #ddd;
+      }
+   }
+   blockquote {
+      background: #353535;
+      color: #ddd;
+      box-shadow: none;
+      font-size: 16px;
+      cite {
+         color: #fff;
+      }
+   }
+   strong {
+      color: #eee;
+   }
+   hr {
+      background: #353535;
+   }
+   button, input, select, textarea {
+      background-color: #353535;
+      border: 1px solid #444;
+   }
+   input, textarea {
+      color: #ddd;
+   }
+   input:focus, textarea:focus {
+      border: 1px solid #555;
+      color: #fff;
+   }
+   table, th, td {
+      border-color: #444;
+   }
+}
+
+/* Widgetized area */
+#footer-widgets {
+   padding: 60px 0 20px;
+   .widget {
+      margin-bottom: 40px;
+      .widget-title {
+         color: #999;
+         margin: 0 0 10px;
+      }
+      li {
+         padding: 6px 0;
+         &:not(:last-child) {
+            border-bottom: 1px solid #444;
+         }
+         ul, ol {
+            border-top: 1px solid #444;
+         }
+      }
+   }
+   .widget_tag_cloud .tagcloud a {
+      background: #2e2e2e;
+      color: #ccc !important;
+      text-shadow: none;
+      &:hover {
+         background: #353535;
+         color: #fff !important;
+      }
+   }
+   .widget_calendar caption {
+      border-top: 0;
+   }
+}
+
+#footer-socket {
+   text-align: center;
+}
+#footer-social ul,
+#footer-navigation ul {
+   display: inline-block;
+}
+
+@media #{$min_2} {
+   #footer-socket {
+      #footer-copyright {
+         float: left;
+      }
+      #footer-social,
+      #footer-navigation {
+         float: right;
+         ul {
+            display: block;
+         }
+      }
+   }
+   html[dir="rtl"] #footer-socket #footer-copyright {
+      float: right;
+   }
+   html[dir="rtl"] #footer-socket #footer-social,
+   html[dir="rtl"] #footer-socket #footer-navigation {
+      float: left;
+   }
+}
+
+/* Socket area, includes copyright info & additional menu */
+#footer-socket {
+   @include has-clearfix;
+   padding: 20px 0;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 32px;
+   #footer-copyright {
+      margin: 0;
+   }
+}
+
+/* Add border for visual separation */
+#footer-widgets + #footer-socket {
+   border-top: 1px solid #444;
+}
+
+/* Footer Social Media */
+#footer-social {
+   cursor: default;
+   margin-top: 10px;
+   ul {
+      @include has-clearfix;
+      margin: 0;
+      padding: 0;
+   }
+   li {
+      list-style: none;
+      float: left;
+      &:not(:last-child) {
+         padding: 0 10px 0 0;
+      }
+      a {
+         text-decoration: none;
+         height: 40px;
+         width: 40px;
+         display: block;
+         line-height: 40px;
+         text-align: center;
+         border-radius: 40px;
+         transition: color 0.25s ease, background 0.25s ease;
+         margin-top: -7px;
+         color: #fff;
+         background: #333;
+         transform: none;
+         &:hover {
+            background: #fff;
+            color: #000;
+         }
+      }
+   }
+}
+
+@media #{$min_2} {
+   #footer-social {
+      margin-top: 0;
+      margin-left: 10px !important;
+   }
+}
+
+/* Footer Navigation */
+#footer-navigation {
+   cursor: default;
+   ul {
+      @include has-clearfix;
+      margin: 0;
+      padding: 0;
+   }
+   li {
+      list-style: none;
+      float: left;
+      &:not(:last-child):after {
+         content: "/";
+         margin: 0 10px;
+         color: #bbb;
+      }
+   }
+}

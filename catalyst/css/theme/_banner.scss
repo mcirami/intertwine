@@ -1,0 +1,131 @@
+#banner {
+   text-shadow: rgba(0,0,0,0.25) 0px 1px 1px;
+   overflow: hidden;
+   min-height: 90px; // Min height = header height
+   background: #252525;
+}
+body.floating-header #banner {
+   min-height: 180px;
+}
+
+/* When a background image has been selected */
+body.banner-image #banner {
+   background-position: center center;
+   background-size: cover;
+   &:after {
+      display: block;
+      content: "";
+   }
+}
+
+/* Banner top padding with banner menu only */
+body.banner-menu:not(.banner-title) #banner {
+   padding-top: 90px;
+}
+body.banner-menu.floating-header:not(.banner-title) #banner {
+   padding-top: 180px;
+}
+
+/* Banner top padding with banner title only
+   as well as with banner menu & title */
+body.banner-title #banner,
+body.banner-title.banner-menu #banner {
+   padding-top: 0; // Leave this at 0 because the banner title determines the height
+}
+body.banner-title.floating-header #banner,
+body.banner-title.banner-menu.floating-header #banner {
+   padding-top: 70px; // Needs to be 70 to compensate for floating header
+}
+@media #{$min_2} {
+   body.banner-title.floating-header.top-bar #banner,
+   body.banner-title.banner-menu.floating-header.top-bar #banner {
+      padding-top: 120px; // Needs to be 120 to compensate for floating header & floating top bar
+   }
+}
+
+/* Banner title is vertically centered using padding */
+#banner-title {
+   padding: 90px 0;
+   text-align: center;
+   width: 1250px;
+   margin: 0 auto;
+   transform-origin: left center;
+   h1 {
+      font-weight: 300;
+      font-size: 50px;
+      color: #fff;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+   }
+   h2 {
+      font-weight: 300;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+      margin: 0;
+   }
+}
+.js #banner-title {
+   opacity: 0;
+}
+@media #{$min_1} {
+   body #banner-title {
+      padding: 120px 0;
+   }
+   body.banner-image #banner-title {
+      padding: 180px 0;
+   }
+}
+
+/* Banner Navigation */
+#banner-menu {
+   .nav-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @include has-clearfix;
+      li {
+         margin: 0 5px 5px 0;
+         display: block;
+         float: left;
+         a {
+            display: block;
+            padding: 0 10px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            font-weight: 300;
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.25);
+            font-size: 14px;
+         }
+         &.current-menu-item > a {
+            background: #f9f9f9;
+            color: #000;
+            text-shadow: none;
+            font-weight: 400;
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+@media #{$min_2} {
+   #banner-menu .nav-menu li {
+      margin: 0;
+      a {
+         border-radius: 0;
+         border: 0;
+         padding: 0 20px;
+         height: 50px;
+         line-height: 50px;
+         font-size: 18px;
+         text-decoration: none;
+      }
+      &.current-menu-item > a {
+         box-shadow: rgba(0,0,0,0.05) 0px 0px 2px 2px;
+      }
+   }
+}

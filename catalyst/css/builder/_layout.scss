@@ -1,0 +1,111 @@
+/* Global default padding for all builder content sections */
+.builder-section .builder-section-viewport {
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+/* Remove top padding from first section, and bottom padding for last section
+   on pages where the page builder is enabled and there is also a sidebar */
+body.builder-active.sidebar-left .builder-section,
+body.builder-active.sidebar-right .builder-section {
+   &.builder-full-width-element-first .builder-section-viewport:not(.has-custom-bg) {
+      padding-top: 0;
+   }
+   &.builder-full-width-element-last .builder-section-viewport:not(.has-custom-bg) {
+      padding-bottom: 0;
+   }
+}
+
+// Sections with custom backgrounds will recieve side padding
+// on pages with the sidebar enabled
+body.sidebar-left .builder-section,
+body.sidebar-right .builder-section {
+   .builder-section-viewport.has-custom-bg {
+      @include site-content-wrap;
+   }
+}
+
+/* General styles for full width & centered pages */
+body.centered.builder-active #content,
+body.full-width.builder-active #content {
+   .site-content-wrap {
+      max-width: none;
+      padding: 0;
+   }
+   #main {
+      padding-top: 0;
+      padding-bottom: 0;
+      & > .hentry {
+         margin-bottom: 0;
+      }
+   }
+   .builder-content-wrap {
+      @include site-content-wrap;
+   }
+   .below-post {
+      @include site-content-wrap;
+      padding-bottom: 50px;
+   }
+   .post-password-form {
+      @include site-content-wrap;
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .template-grid-descendants {
+      @include site-content-wrap;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+}
+
+/* General styles for centered pages */
+body.centered.builder-active #content {
+   #primary {
+      max-width: none;
+   }
+   .builder-content-wrap {
+      max-width: 833px;
+   }
+}
+
+/* Page builder enabled for WooCommerce products */
+body.builder-active.single-product {
+   #tab-description {
+      margin: -50px -20px !important;
+      @media (min-width: 768px) {
+         margin: -50px !important;
+      }
+      .builder-content-wrap {
+         padding: 0 50px;
+      }
+      .builder-section.builder-full-width-element-first .builder-section-viewport {
+         padding-top: 40px;
+      }
+      .builder-section.builder-full-width-element-last .builder-section-viewport {
+         padding-bottom: 40px;
+      }
+   }
+}
+
+/* Page builder enabled for single posts */
+body.single.builder-active {
+   .entry-featured-image,
+   .entry-header,
+   .entry-footer {
+      display: none !important;
+   }
+}
+
+/* Increase top padding for first section if it is the first full width element, banner is not active, and the header is floating */
+body.centered.floating-header.builder-active:not(.banner) .builder-section.builder-full-width-element-first .builder-section-viewport,
+body.full-width.floating-header.builder-active:not(.banner) .builder-section.builder-full-width-element-first .builder-section-viewport {
+   padding-top: 70px;
+}
+
+/* Increase top padding for first section if it is the first full width element, banner is not active, and the header is floating */
+@media #{$min_2} {
+   body.top-bar.centered.floating-header.builder-active:not(.banner) .builder-section.builder-full-width-element-first .builder-section-viewport,
+   body.top-bar.full-width.floating-header.builder-active:not(.banner) .builder-section.builder-full-width-element-first .builder-section-viewport {
+      padding-top: 120px;
+   }
+}

@@ -1,0 +1,103 @@
+#top-bar {
+   display: none; // Hidden by default
+}
+
+@media #{$min_2} {
+   #top-bar {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      overflow: hidden;
+      background: #333;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: #ddd;
+
+      a {
+         color: #ddd;
+         text-decoration: none;
+         transition: color 0.25s ease;
+         &:hover {
+            color: #fff;
+         }
+      }
+   }
+
+   /* Floating Header */
+   body.js.floating-header #top-bar {
+      position: absolute;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      z-index: 999;
+      width: 100%;
+      background: transparent;
+      &, a, a:hover {
+         color: #fff !important;
+      }
+   }
+
+   /* Floating header with shadow background */
+   body.js.floating-header-shadow #top-bar {
+      background: rgba(0,0,0,0.4);
+   }
+
+   /* Floating header with glassy background */
+   body.js.floating-header-glassy #top-bar {
+      background: rgba(0,0,0,0.075);
+   }
+
+   /* Top Bar Text */
+   #top-bar-text {
+      float: left;
+   }
+
+   /* Top Bar Social Media */
+   #top-bar-social {
+      cursor: default;
+      float: right;
+      margin: 0 0 0 25px;
+      ul {
+         @include has-clearfix;
+         margin: 0;
+         padding: 0;
+      }
+      li {
+         list-style: none;
+         float: left;
+         &:not(:last-child) {
+            padding: 0 25px 0 0;
+         }
+      }
+   }
+
+   /* Top bar Navigation */
+   #top-bar-navigation {
+      cursor: default;
+      float: right;
+      ul {
+         @include has-clearfix;
+         margin: 0;
+         padding: 0;
+      }
+      li {
+         list-style: none;
+         float: left;
+         &:not(:last-child):after {
+            content: "/";
+            margin: 0 15px;
+         }
+      }
+   }
+}
+
+/* Enable stretched header */
+body.stretched-header #top-bar .site-content-wrap {
+   max-width: none !important;
+}
+@media all and (min-width: 1290px) {
+   body.stretched-header #top-bar {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+}

@@ -1,0 +1,69 @@
+.widget {
+   .widget-title {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 0 15px;
+   }
+   ul, ol {
+      margin: 0;
+      padding: 0;
+      ul, ol {
+         margin-top: 5px;
+         margin-left: 25px;
+      }
+   }
+   li {
+      list-style: none;
+   }
+   a {
+      text-decoration: none;
+      transition: color 0.25s ease;
+   }
+}
+
+/* Recent posts widget */
+.widget_recent_entries .post-date {
+   display: block;
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 400;
+}
+
+/* Tag Cloud Widget */
+.widget_tag_cloud .tagcloud {
+   margin: -3px;
+   @include has-clearfix;
+   a {
+      font-size: 12px !important;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 3px;
+      border-radius: 3px;
+      padding: 12px 8px;
+      float: left;
+      text-decoration: none;
+      transition: color 0.25s ease, background 0.25s ease;
+   }
+}
+
+/* Catalyst Featured Content Widget */
+.widget_catalyst_featured_text {
+   border-radius: 0px !important;
+   box-shadow: none !important;
+   color: rgba(255,255,255,0.9) !important;
+   .widget-title {
+      color: #fff !important;
+   }
+   a {
+      color: #fff !important;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      &:hover {
+         border-bottom: 1px solid rgba(255,255,255,0.75);
+      }
+   }
+}

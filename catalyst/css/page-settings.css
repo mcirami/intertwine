@@ -1,0 +1,12 @@
+#catalyst-banner-image-control.no-image #catalyst-set-banner-image:before {
+  content: attr(title);
+}
+#catalyst-banner-image-control.no-image p:last-child {
+  display: none;
+}
+#catalyst-banner-image-control:not(.no-image) #catalyst-set-banner-image {
+  display: block;
+}
+#catalyst-banner-image-control:not(.no-image) #catalyst-set-banner-image img {
+  max-width: 100%;
+}

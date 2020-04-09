@@ -1,0 +1,76 @@
+/* `page` encompasses the entire layout */
+#page {
+   position: relative;
+   overflow: hidden;
+   background: #f9f9f9;
+   @include has-clearfix;
+}
+
+/* Boxed Mode */
+body.boxed {
+   padding: 0 20px;
+}
+body.boxed #page {
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   max-width: $global_max_width;
+}
+
+/* Dictates horizontal width of layout */
+.site-content-wrap {
+   @include site-content-wrap;
+}
+
+/* Page Layout Variations */
+#primary, #sidebar {
+   max-width: 833px;
+   margin: 0 auto;
+}
+body.full-width #primary {
+   max-width: none;
+}
+@media #{$min_2} {
+   body.sidebar-left, body.sidebar-right {
+      #primary, #sidebar { margin: 0; }
+      #primary { width: 70%; }
+      #sidebar { width: 30%; }
+   }
+   body.sidebar-left {
+      #primary {
+         padding-left: 25px;
+         float: right;
+      }
+      #sidebar {
+         padding-right: 25px;
+         float: left;
+      }
+   }
+   body.sidebar-right {
+      #primary {
+         padding-right: 25px;
+         float: left;
+      }
+      #sidebar {
+         padding-left: 25px;
+         float: right;
+      }
+   }
+}
+
+/* Footer Widgetized Columns */
+@media #{$min_2} {
+   #footer-widgets {
+      &[class*="footer-columns-"] {
+         margin: 0 -25px;
+         @include has-clearfix;
+         .widget {
+            float: left;
+            padding: 0 25px;
+         }
+      }
+      &.footer-columns-2 .widget { width: 50%; }
+      &.footer-columns-3 .widget { width: 33.33%; }
+      &.footer-columns-4 .widget { width: 25%; }
+   }
+}

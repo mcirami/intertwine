@@ -1,0 +1,108 @@
+.builder-button-group {
+   margin: 0 0 -6px; // -6px compensates for bottom margin applied to buttons
+
+   // Ensure consistent height for all buttons
+   .builder-button {
+      padding: 0 18px !important;
+      height: 46px !important;
+      line-height: 46px !important;
+      overflow: hidden;
+      margin-bottom: 6px !important;
+   }
+
+   // Remove margins from icons
+   .builder-button.has-icon {
+      .builder-button-icon {
+         &, &:before, &:after {
+            margin-right: 0 !important;
+         }
+      }
+   }
+
+   // Add more spacing between button icons and text when icon is placed before the text
+   .builder-button.has-icon.icon-location-before .builder-button-group-icon-spacer {
+      margin-right: 4px !important;
+   }
+
+   // Block style buttons
+   &.block-buttons {
+      .builder-button {
+         display: block !important;
+         text-align: center;
+         &:not(:last-child) {
+            margin: 0 0 10px !important;
+         }
+      }
+   }
+
+   // Adds support for variable sized buttons
+   .builder-button.size-small {
+      height: 36px !important;
+      line-height: 36px !important;
+      padding: 0 14px !important;
+   }
+   .builder-button.size-large {
+      height: 56px !important;
+      line-height: 56px !important;
+      padding: 0 22px !important;
+   }
+
+   // Adds support for the inverse button styles
+   .builder-button.style-inverse {
+      color: #fff !important;
+      background: rgba(255,255,255,0.25) !important;
+      text-shadow: none !important;
+      transition: background 0.25s ease, color 0.25s ease;
+      &:before {
+         display: none !important;
+      }
+      &:hover {
+         color: #000 !important;
+         background: #fff !important;
+      }
+   }
+
+   // Adds support for the basic button styles
+   .builder-button.style-muted {
+      color: #444 !important;
+      background: #e5e5e5 !important;
+      text-shadow: none !important;
+      &:before {
+         background: #e5e5e5;
+         background: -webkit-linear-gradient(#e5e5e5, #efefef);
+         background: linear-gradient(#e5e5e5, #efefef);
+      }
+   }
+
+   // Adds support for the colored button styles
+   .builder-button.style-blue {
+      background: #479DBF !important;
+      &:before {
+         background: #479DBF;
+         background: -webkit-linear-gradient(#479DBF, #65BADB);
+         background: linear-gradient(#479DBF, #65BADB);
+      }
+   }
+   .builder-button.style-green {
+      background: #4FB823 !important;
+      &:before {
+         background: #4FB823;
+         background: -webkit-linear-gradient(#4FB823, #8BC96F);
+         background: linear-gradient(#4FB823, #8BC96F);
+      }
+   }
+   .builder-button.style-red {
+      background: #D63131 !important;
+      &:before {
+         background: #D63131;
+         background: -webkit-linear-gradient(#D63131, #E85F5F);
+         background: linear-gradient(#D63131, #E85F5F);
+      }
+   }
+
+   // Adds native spacing amount between buttons
+   .builder-button-group-spacer:after {
+      content: "";
+      margin: 0 3px;
+   }
+}

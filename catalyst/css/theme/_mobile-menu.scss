@@ -1,0 +1,272 @@
+/* Remove tap highlight color */
+#mobile-menu, #mobile-navigation {
+   &, & * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+}
+
+/* Mobile menu launch button container */
+#mobile-menu {
+   // Float CSS is provided elsewhere
+   position: relative;
+   height: 70px;
+   width: 20px;
+   line-height: 70px;
+   margin: 0 0 0 15px;
+}
+
+/* Mobile menu hidden on larger screens */
+@media #{$min_2} {
+   #mobile-menu {
+      display: none;
+   }
+}
+
+/* The button for launching the mobile navigation */
+#open-mobile-menu {
+   display: inline-block;
+   padding: 0 10px;
+   height: 40px;
+   width: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin: -20px 0 0 -10px;
+   cursor: pointer;
+   user-select: none;
+   background: transparent;
+   border: 0;
+   &:hover {
+      opacity: 1;
+   }
+   &:active {
+      transition: 0;
+   }
+   &:after {
+      content: "Menu";
+      position: absolute;
+      display: block;
+      height: 10px;
+      line-height: 10px;
+      font-weight: 700;
+      font-size: 7px;
+      text-transform: uppercase;
+      bottom: 3px;
+      left: -1px;
+      color: #555;
+      transition: color 0.25s ease;
+   }
+}
+#open-mobile-menu .lines {
+   top: 50%;
+   margin-top: -2px;
+   &, &:before, &:after {
+      position: absolute;
+      left: 50%;
+      margin-left: -10px;
+      display: inline-block;
+      width: 20px;
+      height: 3px;
+      background: #555;
+      transition: 0.25s;
+      border-radius: 2px;
+   }
+   &:before, &:after {
+      position: absolute;
+      content: '';
+      transform-origin: 50% 50%;
+      margin-top: 0;
+   }
+   &:before {
+      top: 6px;
+   }
+   &:after {
+      top: -6px;
+   }
+}
+body.js.floating-header:not(.sticky-header-active):not(.mobile-menu-open) #open-mobile-menu {
+   &:after {
+      color: #fff;
+   }
+   .lines {
+      &, &:before, &:after {
+         background: #fff;
+      }
+   }
+}
+body.mobile-menu-active.mobile-menu-open #open-mobile-menu {
+   .lines {
+      background: transparent !important;
+      &:before, &:after{
+         top: 0;
+      }
+      &:before{
+         transform: rotate3d(0,0,1,45deg);
+      }
+      &:after{
+         transform: rotate3d(0,0,1,-45deg);
+      }
+   }
+}
+
+/* Handles the showing/hiding of the navigation panel */
+body.js.mobile-menu-active {
+   overflow: hidden;
+   #body {
+      position: relative;
+   }
+   #body:after {
+      position: fixed;
+      z-index: 998;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      background: transparent;
+      transition: background 0.25s ease;
+   }
+   &.boxed #page {
+      transition: box-shadow 0.25s ease;
+      box-shadow: none;
+   }
+}
+body.js.mobile-menu-active.mobile-menu-open {
+   #body:after {
+      background: rgba(255,255,255,0.9);
+   }
+   &.sticky-header #header .header-content {
+      box-shadow: none;
+   }
+   &.floating-header-shadow:not(.sticky-header-active) #header .header-content {
+      background: transparent;
+   }
+   &.boxed #page {
+      box-shadow: rgba(255,255,255,0.9) 0px 0px 0px 999em;
+   }
+}
+
+/* Mobile Social Media */
+#mobile-social {
+   cursor: default;
+   padding: 10px 5px;
+   border-bottom: 1px solid rgba(255,255,255,0.2);
+   ul {
+      @include has-clearfix;
+      margin: 0;
+      padding: 0;
+   }
+   li {
+      list-style: none;
+      float: left;
+      a {
+         color: #fff;
+         text-decoration: none;
+         padding: 5px;
+         font-size: 12px;
+      }
+   }
+}
+
+/* Basic styles for the mobile navigation */
+#mobile-navigation {
+   overflow: hidden;
+   display: block;
+   ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+         display: block;
+         margin: 0;
+         padding: 0;
+         a {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 10px;
+            color: #fff;
+            text-shadow: rgba(0,0,0,0.25) 0px 1px 2px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            text-decoration: none;
+            white-space: nowrap;
+         }
+      }
+      .sub-menu {
+         background: rgba(0,0,0,0.1);
+         a {
+            border-bottom: 0;
+         }
+      }
+   }
+}
+
+/* When JavaScript is disabled */
+body.no-js #mobile-navigation .sub-menu li a {
+   padding: 0 25px;
+}
+@media #{$min_2} {
+   body.no-js #mobile-navigation {
+      display: none;
+   }
+}
+
+/* When JavaScript is enabled */
+body.js #off-canvas-panel {
+   display: none !important;
+   box-shadow: rgba(0,0,0,0.25) 0px 0px 4px;
+   transform: translateX(-50px);
+   position: fixed;
+   display: none;
+   top: 0;
+   left: 0;
+   height: 100%;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   width: 175px;
+   max-width: 90%;
+   z-index: 1000;
+   #mobile-navigation .nav-menu > li > a {
+      background: rgba(255,255,255,0.075);
+   }
+   #mobile-navigation .nav-menu > li.separator + li:before {
+      content: "";
+      display: block;
+      height: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+   }
+   .nav-menu > li.menu-item-has-children {
+      & > a:after {
+         content: "+";
+         font-weight: 700;
+         float: right;
+         transition: transform 0.25s ease;
+         transform: none;
+      }
+      &.sub-menu-active > a {
+         border-bottom: 1px solid transparent;
+         &:after {
+            transform: rotate(45deg);
+         }
+      }
+   }
+   .sub-menu {
+      transition: opacity 0.25s ease, height 0.25s ease;
+      overflow: hidden;
+      height: 0px;
+      opacity: 0;
+   }
+}
+@media (min-width: 325px) {
+   body.js #off-canvas-panel {
+      width: 250px;
+   }
+}
+body.js.mobile-menu-active #off-canvas-panel {
+   display: block !important;
+   opacity: 0;
+   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+body.js.mobile-menu-open #off-canvas-panel {
+   transform: none;
+   opacity: 1;
+}

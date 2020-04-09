@@ -1,0 +1,92 @@
+.builder-timeline {
+   overflow: hidden;
+   margin: 0 0 $global_margin_after;
+   .builder-timeline-event {
+      .builder-timeline-event-meta {
+         .builder-timeline-event-meta-inside {
+            display: inline-block;
+            text-align: center;
+         }
+         .builder-timeline-event-year {
+            font-size: 60px;
+            font-weight: 300;
+            margin: 0 0 10px;
+            line-height: 1;
+         }
+         .builder-timeline-event-date {
+            font-weight: 400;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+         }
+      }
+      .builder-timeline-event-description {
+         .builder-timeline-event-title {
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+         }
+         .builder-timeline-event-content p:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+
+@media #{$max_2} {
+   .builder-timeline {
+      .builder-timeline-event-meta {
+         text-align: center;
+      }
+      .builder-timeline-event-description {
+         padding: 25px;
+         border: 2px solid;
+         margin: 0 0 $global_margin_after;
+         border-radius: 3px;
+      }
+   }
+}
+
+@media #{$min_2} {
+   .builder-timeline {
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         left: 50%;
+         top: 0;
+         width: 1px;
+         height: 100%;
+      }
+      .builder-timeline-event {
+         &:not(:last-child) {
+            padding: 0 0 50px;
+         }
+         .builder-timeline-event-meta {
+            position: relative;
+            &:after {
+               border: solid transparent;
+               content: " ";
+               height: 0;
+               width: 0;
+               position: absolute;
+               pointer-events: none;
+               border-width: 10px;
+               margin-top: -10px;
+               top: 50%;
+               border-color: rgba(0,0,0,0);
+            }
+         }
+      }
+      &.alignment-left .builder-timeline-event .builder-timeline-event-meta:after,
+      &.alignment-alternate .builder-timeline-event:nth-child(odd) .builder-timeline-event-meta:after {
+         right: 0;
+      }
+      &.alignment-right .builder-timeline-event .builder-timeline-event-meta:after,
+      &.alignment-alternate .builder-timeline-event:nth-child(even) .builder-timeline-event-meta:after {
+         left: 1px;
+      }
+   }
+}

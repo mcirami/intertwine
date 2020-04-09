@@ -1,0 +1,75 @@
+// Global SCSS config
+@import "globals.scss";
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.65;
+   font-size: 16px;
+   color: #000;
+   font-weight: 400;
+}
+
+/* Lead Paragraphs */
+p.lead {
+   font-size: 20px;
+   border-bottom: 1px solid #ddd;
+   padding-bottom: $global_margin_after;
+   margin-bottom: $global_margin_after;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+   clear: both;
+   margin: 0 0 $global_margin_after;
+   color: #000;
+   font-weight: 400;
+   line-height: 1.25;
+   small {
+      color: #555;
+   }
+}
+h1 {
+   font-size: 36px;
+}
+h2 {
+   font-size: 30px;
+}
+h3 {
+   font-size: 24px;
+}
+h4 {
+   font-size: 20px;
+}
+h5 {
+   font-size: 18px;
+}
+h6 {
+   font-size: 16px;
+}
+
+
+/* Paragraph spacing */
+p {
+   margin: 0 0 $global_margin_after;
+}
+
+/* Blockquotes */
+blockquote {
+   font-family: georgia;
+   font-size: 18px;
+   font-weight: normal;
+   font-style: italic;
+   color: #444;
+   padding: 20px;
+   background: #f9f9f9;
+   margin: 0 0 $global_margin_after;
+   cite {
+      color: #888;
+   }
+   p {
+      margin: 0 0 $global_margin_after;
+   }
+   & > p:last-child {
+      margin-bottom: 0;
+   }
+}

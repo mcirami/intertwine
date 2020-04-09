@@ -1,0 +1,87 @@
+.builder-team-member {
+   margin: 0 0 $global_margin_after;
+   .builder-team-member-name {
+      margin: 10px 0 0;
+   }
+   .builder-team-member-role,
+   .builder-team-member-bio {
+      margin: 5px 0 0;
+   }
+   .builder-team-member-name {
+      font-weight: 300;
+      font-size: 26px;
+      color: #000;
+   }
+   .builder-team-member-role {
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 12px;
+   }
+
+   .builder-team-member-header {
+      position: relative;
+      overflow: hidden;
+   }
+   .builder-team-member-attachment {
+      overflow: hidden;
+   }
+   .builder-team-member-links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      ul {
+         position: absolute;
+         bottom: 15px;
+         left: 0;
+         padding: 0;
+         text-align: center;
+         display: block;
+         height: 50px;
+         width: 100%;
+         line-height: 50px;
+         transition: transform 0.25s ease, filter 0.25s ease;
+         transform: scale(0.975);
+         filter: blur(3px);
+         li {
+            list-style: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0 10px 0 0;
+            &:last-child {
+               margin: 0;
+            }
+            a {
+               display: block;
+               height: 50px;
+               width: 50px;
+               border-radius: 50px;
+               border: 1px solid #fff;
+               line-height: 48px;
+               color: #fff;
+               transition: background 0.25s ease, color 0.25s ease;
+               font-size: 20px;
+               &:hover {
+                  color: #000;
+                  background: #fff;
+               }
+               .builder-team-member-link-title {
+                  @extend .screen-reader-text;
+               }
+            }
+         }
+      }
+   }
+   &:hover .builder-team-member-header .builder-team-member-links {
+      opacity: 1;
+      ul {
+         transform: none;
+         filter: blur(0px);
+      }
+   }
+}

@@ -1,0 +1,7 @@
+/* WP Captions are styled using the default caption styles
+   these styles are only here to suppress the error caused
+   by the WordPress Theme Check plugin */
+.wp-caption,
+.wp-caption-text {
+   display: block;
+}

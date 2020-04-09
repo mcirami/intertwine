@@ -1,0 +1,48 @@
+// Global SCSS config
+@import "globals.scss";
+
+// Import theme componenets
+@import "theme/normalize.scss";
+@import "theme/reset.scss";
+@import "theme/accessibility.scss";
+@import "theme/alignment.scss";
+@import "theme/layout.scss";
+@import "theme/typography.scss";
+@import "theme/buttons.scss";
+@import "theme/captions.scss";
+@import "theme/header-search.scss";
+@import "theme/header.scss";
+@import "theme/mobile-menu.scss";
+@import "theme/banner.scss";
+@import "theme/main.scss";
+@import "theme/widgets.scss";
+@import "theme/sidebar.scss";
+@import "theme/social-media.scss";
+@import "theme/themefyre-portfolio.scss";
+@import "theme/top-bar.scss";
+@import "theme/footer.scss";
+@import "theme/galleries.scss";
+@import "theme/woocommerce.scss";
+
+// Import page builder components
+@import "builder/layout.scss"; // This file dictates how pages are styled when the page builder is active
+@import "builder/button-group.scss";
+@import "builder/call-to-action.scss";
+@import "builder/carousel.scss";
+@import "builder/contact-form.scss";
+@import "builder/featured-number.scss";
+@import "builder/full-width-slider.scss";
+@import "builder/icon-box.scss";
+@import "builder/image.scss";
+@import "builder/instructions.scss";
+@import "builder/notification.scss";
+@import "builder/price-table.scss";
+@import "builder/recent-posts.scss";
+@import "builder/slider.scss";
+@import "builder/statistics.scss";
+@import "builder/tab-group.scss";
+@import "builder/team-member.scss";
+@import "builder/testimonial-group.scss";
+@import "builder/text-styles.scss";
+@import "builder/timeline.scss";
+@import "builder/toggle-group.scss";

@@ -1,0 +1,71 @@
+.builder-statistics {
+   margin: 0 0 $global_margin_after;
+   .builder-statistics-item:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .builder-statistics-item-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0 0 5px;
+      display: block;
+   }
+   .builder-statistics-item-bar {
+      height: 20px;
+   }
+   .builder-statistics-item-bar-value {
+      height: 20px;
+      border-radius: 4px;
+   }
+
+   // Inverse style
+   &.inverse .builder-statistics-item-title {
+      color: #fff;
+   }
+
+   // Visible values styles
+   &.show-values {
+      .builder-statistics-item-bar {
+         height: 30px;
+      }
+      .builder-statistics-item-bar-value {
+         line-height: 30px;
+         height: 30px;
+         color: #fff;
+         text-align: right;
+         text-shadow: rgba(0,0,0,0.25) 0px 1px 2px;
+         .builder-statistics-item-data {
+            display: block;
+            margin-right: 8px;
+            font-size: 14px;
+            .builder-statistics-item-maximum {
+               display: none;
+            }
+         }
+      }
+   }
+
+   // Animated styles
+   .js &.is-animated {
+      .builder-statistics-item-bar-value {
+         transition: width 0.5s ease;
+      }
+      .builder-statistics-item:not(.animate-item) .builder-statistics-item-bar-value {
+         width: 0 !important;
+      }
+   }
+
+   // Animated & Visible Percentages styles
+   .js &.is-animated.show-values {
+      .builder-statistics-item-bar-value .builder-statistics-item-data {
+         transition: opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s;
+         opacity: 1;
+         transform: none;
+      }
+      .builder-statistics-item:not(.animate-item) .builder-statistics-item-bar-value .builder-statistics-item-data {
+         opacity: 0;
+         transform: translateX(-25px);
+      }
+   }
+}

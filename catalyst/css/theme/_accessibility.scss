@@ -1,0 +1,12 @@
+/* Text meant only for screen readers */
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+   position: absolute !important;
+}
+
+/* JavaScript Utility Classes */
+.js .hide-if-js,
+.no-js .hide-if-no-js { display: none; }

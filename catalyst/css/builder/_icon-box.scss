@@ -1,0 +1,99 @@
+.builder-icon-box {
+   margin: 0 0 $global_margin_after;
+
+   .builder-icon-box-title {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+
+   // Remove bottom margin from last paragraph
+   .builder-icon-box-content p:last-child {
+      margin-bottom: 0;
+   }
+
+   // GLobal inverse style
+   &.inverse {
+      .builder-icon-box-title {
+         color: #fff;
+      }
+      .builder-icon-box-content {
+         color: #fff;
+      }
+   }
+
+   // Icon above style
+   &.icon-location-above {
+      text-align: center;
+      .builder-icon-box-title {
+         margin: 0 0 15px;
+         font-size: 18px;
+      }
+      .builder-icon-box-icon-container .builder-icon-box-icon {
+         font-size: 64px;
+      }
+      &.icon-custom-color .builder-icon-box-icon-container {
+         background: transparent !important;
+         .builder-icon-box-icon {
+            color: inherit;
+         }
+      }
+   }
+
+   // Icon adjacent style
+   &.icon-location-adjacent {
+      text-align: center;
+      position: relative;
+      .builder-icon-box-title {
+         margin: 0 0 5px;
+      }
+      .builder-icon-box-icon-container {
+         text-align: center;
+         height: 60px;
+         width: 60px;
+         line-height: 60px;
+         border-radius: 60px;
+         margin: 0 auto 10px;
+         position: relative;
+         .builder-icon-box-icon {
+            font-size: 22px;
+            color: #fff;
+         }
+      }
+      @media #{$min_1} {
+         text-align: inherit;
+         .builder-icon-box-icon-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+         }
+         .builder-icon-box-adjacent-container {
+            padding: 0 0 0 75px;
+            .builder-icon-box-title {
+               padding: 5px 0 0;
+            }
+         }
+      }
+   }
+
+   // Icon inline style
+   &.icon-location-inline {
+      .builder-icon-box-title {
+         margin: 0 0 10px;
+      }
+      .builder-icon-box-title .builder-icon-box-icon {
+         width: auto;
+         margin: 0 2px 0 0;
+         font-size: 16px;
+      }
+      &.icon-custom-color .builder-icon-box-icon-container {
+         background: transparent !important;
+         .builder-icon-box-icon {
+            color: inherit;
+         }
+      }
+   }
+
+}

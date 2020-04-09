@@ -1,0 +1,96 @@
+/* Default text styles */
+.builder-text-style-page-title {
+   font-size: 40px;
+   font-weight: 300;
+   margin: 0 0 15px;
+}
+.builder-text-style-page-tagline {
+   font-size: 20px;
+   font-weight: 300;
+   margin: 0 0 15px;
+}
+@media #{$min_2} {
+   .builder-text-style-page-title { font-size: 60px; }
+   .builder-text-style-page-tagline { font-size: 30px; }
+}
+.builder-text-style-section-title {
+   font-weight: 400;
+   font-size: 28px;
+   margin: 0 0 15px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+.builder-text-style-section-tagline {
+   font-weight: 400;
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin: 0 0 15px;
+}
+@media #{$min_2} {
+   .builder-text-style-section-title { font-size: 32px; }
+   .builder-text-style-section-tagline { font-size: 14px; }
+}
+.builder-text-style-hero-title {
+   font-weight: 300;
+   font-size: 24px;
+   margin: 0 0 15px;
+   text-transform: uppercase;
+   letter-spacing: 8px;
+}
+.builder-text-style-hero-tagline {
+   font-weight: 300;
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   margin: 0 0 15px;
+}
+@media #{$min_1} {
+   .builder-text-style-hero-title { font-size: 65px; }
+   .builder-text-style-hero-tagline { font-size: 18px; }
+}
+
+/* Custom text styles */
+.builder-text-style-banner-title {
+   font-weight: 300;
+   font-size: 24px;
+   margin: 0 0 15px;
+   text-transform: uppercase;
+   letter-spacing: 8px;
+}
+.builder-text-style-banner-tagline {
+   font-weight: 300;
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   margin: 0 0 15px;
+}
+@media #{$min_1} {
+   .builder-text-style-banner-title { font-size: 50px; }
+   .builder-text-style-banner-tagline { font-size: 16px; }
+}
+
+.builder-text-style-large-thin {
+   font-weight: 100;
+   font-size: 30px;
+}
+@media #{$min_1} {
+   .builder-text-style-large-thin { font-size: 60px; }
+}
+
+.builder-text-style-large-uppercase-bold {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 700;
+   font-size: 30px;
+}
+@media #{$min_1} {
+   .builder-text-style-large-uppercase-bold { font-size: 60px; }
+}
+
+.builder-text-style-small-uppercase-bold {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 700;
+   font-size: 14px;
+}
